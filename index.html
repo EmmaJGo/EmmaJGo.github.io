@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="forms.html" method="post">
+      <h1>Welcome to Job Opportunities</h1>
+      <!--Personal Info Section -->
+      <legend class="subtitle_comp"><span class="number">1</span><span class="subtitle">Personal Info</span></legend>
+      <fieldset class="wrapper">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="street_address">Street Address:</label>
+        <input type="text" id="street_address" name="street_address">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+        <fieldset class="selection"> <!--State selection -->
+          <legend>State:</legend>
+          <select id="state" name="state">
+            <optgroup label="South East Region">
+              <option value="ky">KY</option>
+              <option value="tx">TX</option>
+              <option value="fl">FL</option>
+            </optgroup>
+            <optgroup label="East Region">
+              <option value="ny">NY</option>
+              <option value="nj">NJ</option>
+              <option value="vt">VT</option>
+            </optgroup>
+            <optgroup label="West Region">
+              <option value="ca">CA</option>
+              <option value="az">AZ</option>
+              <option value="co">CO</option>
+            </optgroup>
+          </select>
+        </fieldset> <!--Ends State selection -->
+        <label for="telephone">Phone:</label>
+        <input type="tel" id="telephone" name="telephone">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </fieldset>
+      <!--Self Description Section -->
+      <legend class="subtitle_comp"><span class="number">2</span><span class="subtitle">Self Description</span></legend>
+      <fieldset class="wrapper">
+        <label for="bio">Tell me a bit about yourself:</label>
+        <textarea id="bio" name="bio"></textarea>
+        <label>Gender:</label>
+        <div class="g_selector">
+          <input type="radio" id="non_conforming" value="non_conforming" name="gender"><label for="non_conforming" class="lyne">Non-Conforming</label><br>
+          <input type="radio" id="female" value="female" name="gender"><label for="female" class="lyne">Female</label><br>
+          <input type="radio" id="male" value="male" name="gender"><label for="male" class="lyne">Male</label>
+        </div>
+      </fieldset>
+      <!--Looking For Section -->
+      <legend class="subtitle_comp"><span class="number">3</span><span class="subtitle">Looking For</span></legend>
+      <fieldset class="wrapper">
+        <label>Job Type:</label>
+        <div class="g_selector">
+          <input type="checkbox" id="web_developer" value="web_developer" name="job_type"><label for="web_developer" class="lyne">Web Developer</label><br>
+          <input type="checkbox" id="web_designer" value="web_designer" name="job_type"><label for="web_designer" class="lyne">Web Designer</label><br>
+          <input type="checkbox" id="app_developer" value="app_developer" name="job_type"><label for="app_developer" class="lyne">App Developer</label><br>
+        </div>
+        <label for="start">When could you begin to work?</label>
+        <input type="date" id="start" name="beginning_day" value="2020-05-01" max="2021-01-01">
+      </fieldset>
+      <!--Submit button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
